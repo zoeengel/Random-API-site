@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
+import classes from "./advice.module.css";
+
 const Pokemons = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [loadedAdvice, setLoadedAdvice] = useState([]);
@@ -32,18 +34,16 @@ const Pokemons = () => {
 
   if (isLoading) {
     return (
-      <section>
+      <div>
         <h3>Loading...</h3>
-      </section>
+      </div>
     );
   }
 
   return (
-    <section>
-      <h1>Click the button for a Random piece of advice</h1>
+    <div className={classes.section}>
       <Link to="/">Home</Link>
       <button onClick={getAdvice}>random</button>
-      {/* <pre>{JSON.stringify(loadedAdvice, null, 2)}</pre> */}
       <div>
         <ul>
           {loadedAdvice.map((item) => (
@@ -51,7 +51,7 @@ const Pokemons = () => {
           ))}
         </ul>
       </div>
-    </section>
+    </div>
   );
 };
 

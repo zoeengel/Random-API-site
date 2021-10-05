@@ -1,4 +1,3 @@
-import "./App.css";
 import { Route, Switch } from "react-router-dom";
 import LandingPage from "./components/landingPage";
 import Pokemons from "./components/advice";
