@@ -27,8 +27,8 @@
 }
 
 .image {
-  border-bottom-left-radius: 10px;
-  border-top-left-radius: 10px;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
   background-color: #edf7ce;
   padding: 3.4em;
   box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
