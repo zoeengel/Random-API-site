@@ -1,4 +1,65 @@
 .section {
-  background-color: #fef4e7;
+  background-color: #f7ebda;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button {
+  color: white;
+  background-color: #318061;
+  padding: 1em 2.5em;
+  border-radius: 7px;
+  width: max-content;
+  border: none;
+}
+
+.button:hover {
+  background-color: #55c598c4;
+  color: #143039;
+}
+
+.header {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  /* background-color: #77002e; */
+  padding: 0;
+}
+
+header ul {
+  list-style: none;
+  /* margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: baseline; */
+}
+
+.header li {
+}
+
+.header a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  color: #143039;
+}
+
+.header a:hover,
+.header a:active,
+.header a.active {
+  text-decoration-line: underline;
+}
+.advice {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.advice p {
+  list-style: none;
+  text-align: center;
+  align-items: center;
 }

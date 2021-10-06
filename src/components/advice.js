@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
+import Card from "./Card";
 import classes from "./advice.module.css";
 
 const Pokemons = () => {
@@ -42,15 +43,26 @@ const Pokemons = () => {
 
   return (
     <div className={classes.section}>
-      <Link to="/">Home</Link>
-      <button onClick={getAdvice}>random</button>
-      <div>
-        <ul>
+      <header className={classes.header}>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <Card>
+        <div className={classes.advice}>
           {loadedAdvice.map((item) => (
-            <li key={item.id}>{item.advice}</li>
+            <p key={item.id}>{item.advice}</p>
           ))}
-        </ul>
-      </div>
+        </div>
+      </Card> <br/>
+      <button className={classes.button} onClick={getAdvice}>
+        random
+      </button>
     </div>
   );
 };
