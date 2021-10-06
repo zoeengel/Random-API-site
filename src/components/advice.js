@@ -43,25 +43,18 @@ const Pokemons = () => {
 
   return (
     <div className={classes.section}>
-      <header className={classes.header}>
-        <nav>
-          <ul>
-            <li></li>
-          </ul>
-        </nav>
-      </header>
       <Card>
         <div className={classes.advice}>
           {loadedAdvice.map((item) => (
             <p key={item.id}>{item.advice}</p>
           ))}
         </div>
-      </Card>{" "}
+      </Card>
       <br />
       <button className={classes.button} onClick={getAdvice}>
-        Random
+        Click me
       </button>
-      <br/>
+      <br />
       <Link
         style={{
           textDecoration: "none",
@@ -70,8 +63,7 @@ const Pokemons = () => {
           padding: "0.8em 1.7em",
           borderRadius: "7px",
         }}
-        to="/"
-      >
+        to="/">
         Go back
       </Link>
     </div>
