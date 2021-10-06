@@ -7,11 +7,11 @@
 }
 
 .button {
+  font-size: 0.85em;
   color: white;
   background-color: #318061;
   padding: 1em 2.5em;
   border-radius: 7px;
-  width: max-content;
   border: none;
 }
 

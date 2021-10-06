@@ -46,23 +46,34 @@ const Pokemons = () => {
       <header className={classes.header}>
         <nav>
           <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
+            <li></li>
           </ul>
         </nav>
       </header>
-
       <Card>
         <div className={classes.advice}>
           {loadedAdvice.map((item) => (
             <p key={item.id}>{item.advice}</p>
           ))}
         </div>
-      </Card> <br/>
+      </Card>{" "}
+      <br />
       <button className={classes.button} onClick={getAdvice}>
-        random
+        Random
       </button>
+      <br/>
+      <Link
+        style={{
+          textDecoration: "none",
+          color: "#143039",
+          backgroundColor: "#edf7ce",
+          padding: "0.8em 1.7em",
+          borderRadius: "7px",
+        }}
+        to="/"
+      >
+        Go back
+      </Link>
     </div>
   );
 };
