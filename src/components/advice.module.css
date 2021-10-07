@@ -2,14 +2,14 @@
   background-color: #f7ebda;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  justify-content:center;
   align-items: center;
   flex-direction: column;
   margin: auto;
 }
 
 .button {
-  font-size: 0.85em;
+  font-size: 0.82em;
   color: white;
   background-color: #318061;
   padding: 1em 2.5em;
@@ -22,15 +22,6 @@
   color: #143039;
 }
 
-.header {
-  width: 100%;
-  height: 5rem;
-  display: flex;
-  align-items: center;
-  /* justify-content: space-between; */
-  /* background-color: #77002e; */
-  padding: 0;
-}
 .advice {
   display: flex;
   text-align: center;
@@ -41,4 +32,14 @@
   list-style: none;
   text-align: center;
   align-items: center;
+}
+
+@media screen and (max-width: 414px) {
+  .advice p {
+    font-size: 0.75em;
+  }
+  .button {
+    font-size: 0.9em;
+    padding: 1em 2em;
+  }
 }

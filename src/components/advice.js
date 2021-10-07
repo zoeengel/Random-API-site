@@ -43,6 +43,7 @@ const Pokemons = () => {
 
   return (
     <div className={classes.section}>
+      <h1>Random Advice</h1>
       <Card>
         <div className={classes.advice}>
           {loadedAdvice.map((item) => (
