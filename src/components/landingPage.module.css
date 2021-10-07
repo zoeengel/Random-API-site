@@ -36,3 +36,20 @@
     0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
 }
+
+@media screen and (max-width: 414px) {
+  .main .image {
+    display: none;
+  }
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .landingActions {
+    background-color: #edf7ce;
+    padding: 1em;
+    margin: 10%;
+    border-radius: 10px;
+  }
+}
