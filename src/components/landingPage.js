@@ -18,7 +18,7 @@ const LandingPage = () => {
       <div className={classes.main}>
         <div className={classes.landingActions}>
           <h1 className={classes.title}>Random Advice Generator</h1>
-          <p>
+          <p className={classes.desc}>
             Bored and looking for random advice? Well you're just a click
             away.
           </p>
