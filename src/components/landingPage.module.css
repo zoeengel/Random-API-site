@@ -38,8 +38,18 @@
 }
 
 @media screen and (max-width: 414px) {
+  .section {
+    display: flex;
+    flex-direction: column;
+  }
   .main .image {
     display: none;
+    width: 66vw;
+    height: 50%;
+    border-radius: none;
+    box-shadow: none;
+    margin: auto;
+    padding: 1em;
   }
   .main {
     display: flex;

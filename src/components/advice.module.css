@@ -35,6 +35,12 @@
 }
 
 @media screen and (max-width: 414px) {
+  .section {
+    background-color: #143039;
+  }
+  .title {
+    color: #edf7ce;
+  }  
   .advice p {
     font-size: 0.75em;
   }
