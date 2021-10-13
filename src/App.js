@@ -1,6 +1,7 @@
 import { Route, Switch } from "react-router-dom";
 import LandingPage from "./components/landingPage";
 import Pokemons from "./components/advice";
+import Funny from "./components/funny";
 
 function App() {
   return (
@@ -11,6 +12,9 @@ function App() {
         </Route>
         <Route path="/advice">
           <Pokemons />
+        </Route>
+        <Route>
+          <Funny path="/funny"/>
         </Route>
       </Switch>
     </section>
