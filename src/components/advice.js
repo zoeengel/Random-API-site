@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 
 import Card from "./Card";
 import classes from "./advice.module.css";
+import Description from "./description";
 
 const Pokemons = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -44,6 +45,7 @@ const Pokemons = () => {
   return (
     <div className={classes.section}>
       <h1 className={classes.title}>Random Advice</h1>
+      <Description />
       <Card>
         <div className={classes.advice}>
           {loadedAdvice.map((item) => (
@@ -64,7 +66,8 @@ const Pokemons = () => {
           padding: "0.8em 1.7em",
           borderRadius: "7px",
         }}
-        to="/">
+        to="/"
+      >
         Go back
       </Link>
     </div>
