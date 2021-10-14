@@ -7,9 +7,9 @@
 .section {
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  height: 88vh;
   background-color: #fef4e7;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .main {
@@ -26,37 +26,17 @@
   width: 66%;
 }
 
-.image {
-  border-bottom-left-radius: 30px;
-  border-top-left-radius: 30px;
-  background-color: #edf7ce;
-  padding: 3.4em;
-  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
-    0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
-    0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086),
-    0 100px 80px rgba(0, 0, 0, 0.12);
-}
-
 @media screen and (max-width: 414px) {
   .section {
     display: flex;
     flex-direction: column;
     background-color: #143039;
   }
-  .main .image {
-    display: none;
-    width: 66vw;
-    height: 50%;
-    border-radius: none;
-    box-shadow: none;
-    margin: auto;
-    padding: 1em;
-  }
   .title {
     color: white;
     font-size: 2.3em;
   }
-  .desc{
+  .desc {
     font-size: 0.8em;
     color: white;
   }

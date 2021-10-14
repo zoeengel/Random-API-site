@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
 import classes from "./advice.module.css";
 
 import Description from "./description";
@@ -10,7 +9,7 @@ const Funny = () => {
   const [loadedFunny, setLoadedFunny] = useState([]);
 
   const getFunny = () => {
-    fetch("https://v2.jokeapi.dev/joke/Pun")
+    fetch("https://v2.jokeapi.dev/joke/pun?type=twopart")
       .then((response) => {
         return response.json();
       })
@@ -48,27 +47,17 @@ const Funny = () => {
       <Card>
         <div className={classes.advice}>
           {loadedFunny.map((items) => (
-            <p key={items.id}>{items.setup}</p>
+            <p key={items.id}>
+              {items.setup}
+              {items.deliver}
+            </p>
           ))}
         </div>
       </Card>
       <br />
       <button className={classes.button} onClick={getFunny}>
-        Click me
+        Get a new Joke
       </button>
-      <br />
-      <Link
-        style={{
-          textDecoration: "none",
-          color: "#143039",
-          backgroundColor: "#edf7ce",
-          padding: "0.8em 1.7em",
-          borderRadius: "7px",
-        }}
-        to="/"
-      >
-        Go back
-      </Link>
     </div>
   );
 };

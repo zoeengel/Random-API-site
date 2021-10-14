@@ -3,9 +3,12 @@ import LandingPage from "./components/landingPage";
 import Pokemons from "./components/advice";
 import Funny from "./components/funny";
 
+import Navigation from "./components/layout/Navigation";
+
 function App() {
   return (
     <section>
+      <Navigation />
       <Switch>
         <Route path="/" exact>
           <LandingPage />
@@ -13,8 +16,8 @@ function App() {
         <Route path="/advice">
           <Pokemons />
         </Route>
-        <Route>
-          <Funny path="/funny"/>
+        <Route path="/funny">
+          <Funny />
         </Route>
       </Switch>
     </section>

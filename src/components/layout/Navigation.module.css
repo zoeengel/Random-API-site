@@ -1,0 +1,41 @@
+.header {
+  /* width: 100vw; */
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #143039;
+  padding: 0 5%;
+}
+
+.logo {
+  font-size: 1.7em;
+  color: white;
+  font-weight: bold;
+}
+
+.header ul {
+  list-style: none;
+  margin: auto;
+  padding: auto;
+  display: flex;
+  align-items: baseline
+}
+
+.header li {
+  margin-left: 1em;
+}
+
+.header a {
+  text-decoration: none;
+  font-size: 1.3em;
+  color: white;
+}
+
+.header a:hover{
+  color: #edf7ce;
+}
+
+.header a:active {
+    text-decoration: underline;
+}

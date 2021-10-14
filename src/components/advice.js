@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 import Card from "./Card";
@@ -55,21 +54,8 @@ const Pokemons = () => {
       </Card>
       <br />
       <button className={classes.button} onClick={getAdvice}>
-        Click me
+        Refresh advice
       </button>
-      <br />
-      <Link
-        style={{
-          textDecoration: "none",
-          color: "#143039",
-          backgroundColor: "#edf7ce",
-          padding: "0.8em 1.7em",
-          borderRadius: "7px",
-        }}
-        to="/"
-      >
-        Go back
-      </Link>
     </div>
   );
 };
