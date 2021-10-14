@@ -45,6 +45,9 @@
     flex-direction: column;
     align-items: center;
   }
+  .main .image {
+    display: none;
+  }
   .landingActions {
     background-color: #143039;
     padding: 1em;

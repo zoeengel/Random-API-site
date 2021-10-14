@@ -39,3 +39,12 @@
 .header a:active {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 414px) {
+  .logo {
+    font-size: 1.2em;
+  }
+  .header a {
+    font-size: 0.9em;
+  }
+}
