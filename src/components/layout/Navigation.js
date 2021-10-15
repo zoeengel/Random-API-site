@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
+import { FcBiohazard } from "react-icons/fc";
 
 import classes from "./Navigation.module.css";
 
 function Navigation() {
   return (
     <div className={classes.header}>
-      <div className={classes.logo}>Random Shit</div>
+      <div className={classes.logo}><FcBiohazard /></div>
       <nav>
         <ul>
           <li>
