@@ -16,5 +16,6 @@
 @media screen and (max-width: 414px) {
   .card {
     width: 53%;
+    height: max-content;
   }
 }

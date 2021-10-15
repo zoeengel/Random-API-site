@@ -22,16 +22,24 @@
   color: #143039;
 }
 
-.advice {
+/* .advice {
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: center;
-}
+} */
 .advice p {
   list-style: none;
   text-align: center;
   align-items: center;
+  line-height: 2.6em;
+}
+
+.jokes {
+  display: flex;
+  flex-direction:column;
+  justify-content:baseline;
+  text-align: left;
 }
 
 @media screen and (max-width: 414px) {
@@ -43,6 +51,9 @@
   }  
   .advice p {
     font-size: 0.75em;
+  }
+  .jokes p {
+    font-size: 0.77em;
   }
   .button {
     font-size: 0.9em;

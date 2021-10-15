@@ -15,9 +15,9 @@ function Navigation() {
           <li>
             <Link to="/advice">Advice</Link>
           </li>
-          {/* <li>
+          <li>
             <Link to="/funny">Jokes</Link>
-          </li> */}
+          </li>
         </ul>
       </nav>
     </div>

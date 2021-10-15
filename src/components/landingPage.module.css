@@ -24,6 +24,7 @@
 
 .landingActions {
   width: 66%;
+  line-height: 1.5em;
 }
 
 @media screen and (max-width: 414px) {
