@@ -18,6 +18,9 @@ function Navigation() {
           <li>
             <Link to="/funny">Jokes</Link>
           </li>
+          <li>
+            <Link to="/cat-fact">Cats</Link>
+          </li>
         </ul>
       </nav>
     </div>

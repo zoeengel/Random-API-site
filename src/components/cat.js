@@ -5,7 +5,7 @@ import Description from "./description";
 import Card from "./Card";
 
 const CatFacts = () => {
-    const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
   const [loadedFact, setLoadedFact] = useState([]);
 
   const getFact = () => {
@@ -40,10 +40,10 @@ const CatFacts = () => {
       </Card>
       <br />
       <button className={classes.button} onClick={getFact}>
-        Get a new Joke
+        New fact
       </button>
     </div>
   );
-}
+};
 
 export default CatFacts;
