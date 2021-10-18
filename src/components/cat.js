@@ -4,21 +4,21 @@ import classes from "./advice.module.css";
 import Description from "./description";
 import Card from "./Card";
 
-const Funny = () => {
-  const [isLoading, setIsLoading] = useState(true);
-  const [loadedFunny, setLoadedFunny] = useState([]);
+const CatFacts = () => {
+    const [isLoading, setIsLoading] = useState(true);
+  const [loadedFact, setLoadedFact] = useState([]);
 
-  const getFunny = () => {
-    fetch("https://v2.jokeapi.dev/joke/any?type=twopart")
+  const getFact = () => {
+    fetch("https://catfact.ninja/fact?max_length=140")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
         setIsLoading(false);
-        setLoadedFunny(data);
+        setLoadedFact(data);
       });
   };
   useEffect(() => {
-    getFunny();
+    getFact();
   }, []);
 
   if (isLoading) {
@@ -31,20 +31,19 @@ const Funny = () => {
 
   return (
     <div className={classes.section}>
-      <h1 className={classes.title}>Humour</h1>
+      <h1 className={classes.title}>Cat Facts</h1>
       <Description />
       <Card>
         <div className={classes.jokes}>
-          <p>{loadedFunny.setup}</p>
-          <p>{loadedFunny.delivery}</p>
+          <p>{loadedFact.fact}</p>
         </div>
       </Card>
       <br />
-      <button className={classes.button} onClick={getFunny}>
+      <button className={classes.button} onClick={getFact}>
         Get a new Joke
       </button>
     </div>
   );
-};
+}
 
-export default Funny;
+export default CatFacts;
