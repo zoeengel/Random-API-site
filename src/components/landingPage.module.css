@@ -9,7 +9,7 @@
   flex-direction: row;
   height: 88vh;
   background-color: #fef4e7;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .main {
@@ -18,12 +18,13 @@
 }
 
 .title {
+  width: 15em;
   font-size: 2.75em;
   line-height: 1.3em;
 }
 
 .landingActions {
-  width: 66%;
+  margin: auto;
   line-height: 1.5em;
 }
 
@@ -35,11 +36,13 @@
   }
   .title {
     color: white;
-    font-size: 2.3em;
+    font-size: 2em;
+    width: 77%;
   }
   .desc {
-    font-size: 0.8em;
-    color: white;
+    display: none;
+    /* font-size: 0.8em;
+    color: white; */
   }
   .main {
     display: flex;
