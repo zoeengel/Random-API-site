@@ -32,7 +32,7 @@ const CatFacts = () => {
 
   return (
     <div className={classes.section}>
-      <h1 className={classes.title}>Cat Facts</h1>
+      <h1 className={classes.title}>Random Cat Facts</h1>
       <Description />
       <Card>
         <div className={classes.jokes}>

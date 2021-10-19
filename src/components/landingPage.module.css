@@ -41,8 +41,6 @@
   }
   .desc {
     display: none;
-    /* font-size: 0.8em;
-    color: white; */
   }
   .main {
     display: flex;
@@ -53,7 +51,6 @@
     display: none;
   }
   .landingActions {
-    background-color: #143039;
     padding: 1em;
     margin: 10%;
     border-radius: 10px;

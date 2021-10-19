@@ -6,7 +6,7 @@ import bookImage from "./images/hand-book.png";
 const LandingPage = () => {
   return (
     <div className={classes.section}>
-      {/* <div className={classes.main}>
+      <div className={classes.main}>
         <img
           className={classes.image}
           src={bookImage}
@@ -14,14 +14,14 @@ const LandingPage = () => {
           width="450"
           height="550"
         />
-      </div> */}
+      </div>
       <div className={classes.main}>
         <div className={classes.landingActions}>
           <h1 className={classes.title}>
             Random Advice, Jokes and Cat Fact Generator
           </h1>
-          <p className={classes.desc}>Just something to pass the time</p>
-
+          <p className={classes.desc}>Just something to pass the time.</p>
+          
           <Link
             style={{
               textDecoration: "none",
