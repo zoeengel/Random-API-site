@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import classes from "./advice.module.css";
+import loader from "./loading.module.css"
 
 import Description from "./description";
 import Card from "./Card";
@@ -23,7 +24,7 @@ const CatFacts = () => {
 
   if (isLoading) {
     return (
-      <div>
+      <div className={loader.loaderBox}>
         <h3>Loading...</h3>
       </div>
     );
