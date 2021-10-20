@@ -36,8 +36,12 @@
   }
   .title {
     color: white;
-    font-size: 2em;
+    font-size: 1.85em;
     width: 77%;
+  }
+  .titleMobile {
+    color: #edf7ce;
+    font-weight: 400;
   }
   .desc {
     display: none;
@@ -52,7 +56,7 @@
   }
   .landingActions {
     padding: 1em;
-    margin: 10%;
-    border-radius: 10px;
+    margin: 34%;
+    /* border-radius: 10px; */
   }
 }
