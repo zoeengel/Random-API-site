@@ -42,7 +42,7 @@ const Funny = () => {
       </Card>
       <br />
       <button className={classes.button} onClick={getFunny}>
-        Get a new Joke
+        Refresh
       </button>
     </div>
   );

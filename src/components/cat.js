@@ -41,7 +41,7 @@ const CatFacts = () => {
       </Card>
       <br />
       <button className={classes.button} onClick={getFact}>
-        New fact
+        Refresh
       </button>
     </div>
   );

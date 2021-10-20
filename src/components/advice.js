@@ -55,7 +55,7 @@ const Pokemons = () => {
       </Card>
       <br />
       <button className={classes.button} onClick={getAdvice}>
-        Refresh advice
+        Refresh
       </button>
     </div>
   );
