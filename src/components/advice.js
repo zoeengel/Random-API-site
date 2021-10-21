@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 
-import Card from "./Card";
+import Card from "./layout/Card";
 import classes from "./advice.module.css";
 import loader from "./loading.module.css";
-import Description from "./description";
+import Description from "./layout/description";
 
 const Pokemons = () => {
   const [isLoading, setIsLoading] = useState(true);
