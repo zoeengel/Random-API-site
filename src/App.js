@@ -1,10 +1,10 @@
 import { Route, Switch } from "react-router-dom";
-import LandingPage from "./components/landingPage";
-import Pokemons from "./components/advice";
-import Funny from "./components/funny";
-
+import LandingPage from "./components/pages/landingPage";
+import Pokemons from "./components/pages/advice";
+import Funny from "./components/pages/funny";
+import CatFacts from "./components/pages/cat";
 import Navigation from "./components/layout/Navigation";
-import CatFacts from "./components/cat";
+
 
 function App() {
   return (

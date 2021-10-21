@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import classes from "./advice.module.css";
-import loader from "./loading.module.css"
+import loader from "./loading.module.css";
 
-import Description from "./layout/description";
-import Card from "./layout/Card";
+import Description from "../layout/description";
+import Card from "../layout/Card";
 
 const Funny = () => {
   const [isLoading, setIsLoading] = useState(true);

@@ -1,7 +1,7 @@
 import classes from "./landingPage.module.css";
 import { Link } from "react-router-dom";
 
-import bookImage from "./images/hand-book.png";
+import bookImage from "../images/hand-book.png";
 
 const LandingPage = () => {
   return (
