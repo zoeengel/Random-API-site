@@ -23,7 +23,6 @@ const LandingPage = () => {
             <span className={classes.titleMobile}>Cat Fact</span> Generator
           </h1>
           <p className={classes.desc}>Just something to pass the time.</p>
-
           <Link
             style={{
               textDecoration: "none",
